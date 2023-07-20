@@ -24,7 +24,7 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  publicPath: "/github_page_test/",
+  publicPath: "/component_admin/",
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: false,
