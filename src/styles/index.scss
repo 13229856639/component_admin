@@ -63,3 +63,12 @@ div:focus {
 .app-container {
   padding: 20px;
 }
+
+// 带背景
+.container_view {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 84px);
+  background-color: #e9f0fb;
+}
