@@ -29,8 +29,16 @@ module.exports = [
     url: '/vue-admin-template/user/login',
     type: 'post',
     response: config => {
-      const { username } = config.body
+      const { username, password } = config.body
       const token = tokens[username]
+
+      console.log("mock:", config.body);
+      if (password != 'wei') {
+        return {
+          code: 60204,
+          message: '密码错误'
+        }
+      }
 
       // mock error
       if (!token) {

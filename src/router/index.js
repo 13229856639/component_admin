@@ -29,7 +29,6 @@ import Layout from '@/layout'
 // 自动引入路由模块
 const files = require.context('@/router/modules', false, /\.js$/)
 const modules = []
-console.log(files.keys());
 files.keys().forEach((key) => {
   modules.push(...files(key).default)
 })
