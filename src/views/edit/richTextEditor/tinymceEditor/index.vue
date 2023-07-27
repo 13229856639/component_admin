@@ -1,5 +1,5 @@
 <template>
-  <div class="container_view">
+  <div class="app-container">
     <Editor :content.sync="content" :height="800" />
   </div>
 </template>
@@ -21,11 +21,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container_view {
-  padding: 20px;
-  box-sizing: border-box;
-  height: calc(100vh - 84px);
-  display: flex;
-  flex-direction: column;
-}
 </style>
